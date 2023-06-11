@@ -63,6 +63,9 @@ add_executable(${PROJECT_NAME}
   inert_temperature_sensor.test.cpp
   inert_timer.test.cpp
 
+  adc_mux.test.cpp
+
+  ../src/adc_mux.cpp
   ../src/i2c_minimum_speed.cpp
   ../src/rc_servo.cpp
 
