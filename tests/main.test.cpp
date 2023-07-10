@@ -31,6 +31,8 @@ extern void inert_temperature_sensor_test();
 extern void inert_timer_test();
 extern void rc_servo_test();
 
+extern void adc_mux_test();
+
 }  // namespace hal
 
 int main()
@@ -52,4 +54,6 @@ int main()
   hal::inert_temperature_sensor_test();
   hal::inert_timer_test();
   hal::rc_servo_test();
+
+  hal::adc_mux_test();
 }

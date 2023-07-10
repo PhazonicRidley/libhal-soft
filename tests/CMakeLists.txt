@@ -62,8 +62,7 @@ add_executable(${PROJECT_NAME}
   inert_steady_clock.test.cpp
   inert_temperature_sensor.test.cpp
   inert_timer.test.cpp
-
-  main.test.cpp)
+  adc_mux.test.cpp
 
 target_include_directories(${PROJECT_NAME} PUBLIC . ../include ../src)
 target_compile_options(${PROJECT_NAME} PRIVATE

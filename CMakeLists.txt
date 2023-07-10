@@ -21,7 +21,8 @@ find_package(libhal-util REQUIRED CONFIG)
 
 add_library(libhal-soft
   src/rc_servo.cpp
-  src/i2c_minimum_speed.cpp)
+  src/i2c_minimum_speed.cpp
+  src/adc_mux.cpp)
 
 target_include_directories(libhal-soft PUBLIC include)
 target_compile_features(libhal-soft PRIVATE cxx_std_20)
