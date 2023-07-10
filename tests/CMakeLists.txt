@@ -62,14 +62,7 @@ add_executable(${PROJECT_NAME}
   inert_steady_clock.test.cpp
   inert_temperature_sensor.test.cpp
   inert_timer.test.cpp
-
   adc_mux.test.cpp
-
-  ../src/adc_mux.cpp
-  ../src/i2c_minimum_speed.cpp
-  ../src/rc_servo.cpp
-
-  main.test.cpp)
 
 target_include_directories(${PROJECT_NAME} PUBLIC . ../include ../src)
 target_compile_options(${PROJECT_NAME} PRIVATE
@@ -94,4 +87,5 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
   boost-ext-ut::ut
   libhal::libhal
   libhal::util
-  libhal::mock)
+  libhal::mock
+  libhal-soft)
